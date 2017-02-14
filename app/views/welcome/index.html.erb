@@ -7,29 +7,56 @@
   </p>
 </div>
 
+<section>
+  <h2>Giant</h2>
+  <div class="container-fluid">
+    <% if  @products.present? %>
+    <% @products.order('created_at DESC').each do |product| %>
+    <% if  true == product.categories.eql?("Giant")%>
+    <div class="col-xs-6 col-md-3">
+      <div id="item">
+        <%= link_to product_path(product) do %>
+        <% if product.image.present? %>
+        <%= image_tag(product.image.thumb.url, size: "200x200")%>
+      <% else %>
+        <%=image_tag("http://placehold.it/200x200&text=No Pic", class:"thumbnail") %>
+        <% end %>
+        <% end %>
+        <br><br>
+        <%= product.title %>
+        <br>
+        ￥<%= product.price %>
+      </div>
+    </div>
+    <% end %>
+    <% end %>
+    <% end %>
+  </div>
+</section>
 
-
-<div class="content bg-blue">
-    <h1 class="tab center bounds padding active"><span>Products</span></h1>
-    <div class="bounds padding">
-
-
-                <a href="products" class=""><img src="http://trek.scene7.com/is/image/TrekBicycleProducts/Isospeed_1-up_16x9-1?wid=1920&hei=1080&fmt=jpg&qlt=50,1&op_usm=0,0,0,0&iccEmbed=0&cache=on,on" />
-							<div class="link-abs">
-								<p class="link-col-text">View More...</p>
-							</div>
-				        </div>
-			        </div>
-			        <div class="column">
-				        <div class="text">
-					        <h2>BUY NOW...</h2>
-					        <p><span class="text-smaller"></span></p>
-				        </div>
-			        </div>
-		        </a>
-
-
-
-
-	</div>
-</div>
+<section>
+  <h2>Trek</h2>
+  <div class="container-fluid">
+    <% if  @products.present? %>
+    <% @products.order('created_at DESC').each do |product| %>
+    <% if  true == product.categories.eql?("Trek")%>
+    <div class="col-xs-6 col-md-3">
+      <div id="item">
+        <%= link_to product_path(product) do %>
+        <% if product.image.present? %>
+        <%= image_tag(product.image.thumb.url, size: "200x200")%>
+      <% else %>
+        <%=image_tag("http://placehold.it/200x200&text=No Pic", class:"thumbnail") %>
+        <% end %>
+        <% end %>
+        <br><br>
+        <%= product.title %>
+        <br>
+        ￥<%= product.price %>
+      </div>
+    </div>
+    <% end %>
+    <% end %>
+    <% end %>
+  </div>
+</section>

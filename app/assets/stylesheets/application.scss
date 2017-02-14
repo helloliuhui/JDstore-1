@@ -149,21 +149,14 @@
     border: none;
 }
 
-
-
-
-
-.content img{
-  width: 1200px;
-}
-
-.content a, h2{
-  color: #000
-}
-
-.content h2:hover{
-  list-style: none;
-  text-decoration: none;
+#item {
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  display: block;
+  background-color: #fff;
+  border: 1px solid #f5f5f5;
+  margin-bottom: 5px;
 }
 
 footer {
@@ -175,57 +168,10 @@ footer p {
     font-size: 80%;
     color: #e1e1e1
 }
-
-footer h5 {
-    color: #fff;
-    text-shadow: 1px -1px 0 rgba(0, 0, 0, .1)
-}
-footer a:hover {
-    color: #fff
-}
 footer a {
     color: #e1e1e1;
     font-size: 90%
 }
 footer a:hover {
     color: #fff
-}
-footer ul {
-    margin: 0;
-    list-style: none;
-    font-size: 90%;
-    line-height: 1.3em
-}
-footer li {
-    margin: .5em 0
-}
-footer ul.social {
-    line-height: 29px
-}
-footer ul.social li {
-    margin: 1em 0
-}
-footer ul.social a {
-    display: block;
-    height: 29px;
-    padding-left: 36px;
-    background-position: left top;
-    background-repeat: no-repeat;
-    opacity: .8;
-    filter: alpha(opacity=80)
-}
-footer ul.social a:hover {
-    opacity: 1;
-    filter: alpha(opacity=100)
-}
-footer .signature {
-    font-size: 90%;
-    padding-top: 30px;
-    border-top: 1px solid #606060;
-    box-shadow: 0 -1px 0 rgba(255, 255, 255, .1)
-}
-footer .app-store-logo {
-    width: 120px;
-    margin-top: 2px;
-    margin-bottom: 5px
 }
